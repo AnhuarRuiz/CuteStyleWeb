@@ -1,10 +1,3 @@
-/**
-* Template Name: OnePage - v4.9.1
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -128,12 +121,11 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   transition: all 0.5s;
-  background: #fff;
   z-index: 997;
-  padding: 15px 0;
-  border-bottom: 1px solid #e6f2fb;
-}
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.164);
 
+}
 #header.header-scrolled {
   border-color: #fff;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
@@ -192,7 +184,9 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 14px;
-  color: #16507b;
+  font-weight: 200;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #ffffff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -208,42 +202,25 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #2487ce;
+  color: wheat;
 }
-
-.navbar .getstarted,
-.navbar .getstarted:focus {
-  background: #2487ce;
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #3194db;
-}
-
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 14px;
+  left: 1px;
   top: calc(100% + 30px);
-  margin: 0;
+  margin-top: 11px;
   padding: 10px 0;
   z-index: 99;
+  background-color: rgba(0, 0, 0, 0.164);
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
-  min-width: 200px;
+  min-width: 130px;
 }
 
 .navbar .dropdown ul a {
@@ -406,14 +383,14 @@ h6 {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/all/3.png") top center;
   background-size: cover;
   position: relative;
 }
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.527);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -430,32 +407,18 @@ h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 72px;
-  color: #124265;
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(94.23deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Space Grotesk', sans-serif;
+  text-shadow: white 4px 1px;
 }
 
 #hero h2 {
-  color: #5e5e5e;
+  color: wheat;
   margin: 10px 0 0 0;
-  font-size: 22px;
-}
-
-#hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  padding: 14px 50px;
-  border-radius: 5px;
-  transition: 0.5s;
-  margin-top: 30px;
-  color: #fff;
-  background: #2487ce;
-}
-
-#hero .btn-get-started:hover {
-  background: #3194db;
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 #hero .icon-boxes {
@@ -516,13 +479,13 @@ h6 {
 
 @media (max-height: 800px) {
   #hero {
-    height: auto;
+    background-attachment: fixed;
   }
 }
 
 @media (max-width: 992px) {
   #hero {
-    height: auto;
+    background-attachment: fixed;
   }
 
   #hero h1 {

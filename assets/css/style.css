@@ -122,12 +122,12 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 10px;
+  padding: 11px;
   background-color: rgba(0, 0, 0, 0.164);
 
 }
 #header.header-scrolled {
-  border-color: #fff;
+  background-color: rgba(0, 0, 0, 0.744);
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
@@ -489,12 +489,12 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
+    font-size: 38px;
     line-height: 36px;
   }
 
   #hero h2 {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
   }
 }
@@ -503,12 +503,13 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 40px 0;
   overflow: hidden;
+  background-color: rgb(0, 0, 0);
 }
 
 .section-bg {
-  background-color: #f8fbfe;
+  background-color: #000000;
 }
 
 .section-title {
@@ -534,6 +535,21 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about h1{
+  margin: 40px;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 72px;
+  background: linear-gradient(94.23deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Space Grotesk', sans-serif;
+  text-shadow: white 4px 1px;
+  text-align: center;
+}
+.about h2{
+  color: #11dbcf;
+}
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -587,6 +603,61 @@ section {
   background: #2487ce;
   color: #fff;
   text-decoration: none;
+}
+.about .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 180px;
+  background: #fff;
+  box-shadow: 10px -10px 0 -3px rgb(253, 253, 109), 10px -10px black, -17px 10px 0 -3px rgb(255, 184, 196), 20px -20px 0 -3px black;
+}
+
+.about .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.about .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .member .social a {
+  transition: color 0.3s;
+  color: #124265;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.about .member .social a:hover {
+  color: #2487ce;
+}
+
+.about .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+  line-height: 0;
+}
+@media (max-width: 992px) {
+  .about h1 {
+    font-size: 38px;
+    line-height: 36px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 /*--------------------------------------------------------------

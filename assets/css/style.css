@@ -136,11 +136,6 @@ section {
   background: url(../img/all/bg.jpg);
 }
 
-.section-bg {
-  background-color: #000000;
-}
-
-
 @media (max-width: 992px) {
   #header .logo {
     font-size: 28px;
@@ -565,37 +560,6 @@ section {
   position: relative;
   overflow: hidden;
 }
-
-.about .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgb(255, 255, 255);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about .member .social a {
-  transition: color 0.3s;
-  color: #124265;
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.about .member .social a:hover {
-  color: #2487ce;
-}
-
-.about .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-  line-height: 0;
-}
 @media (max-width: 992px) {
   .about h1 {
     font-size: 38px;
@@ -612,15 +576,14 @@ section {
 # Counts
 --------------------------------------------------------------*/
 .counts {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .counts .count-box {
   width: 100%;
   text-align: center;
-  background-color: white;
-  border-radius: 30px;
-  box-shadow: 5px -5px 0 -3px rgb(171, 109, 253), 10px -10px black, -5px 5px 0 -3px rgb(131, 187, 255), 20px -20px 0 -3px black;
+  border-radius: 20px;
+   box-shadow: 4px -4px 0 -3px rgb(255, 141, 160), 10px -10px black, -4px 4px 0 -3px rgb(255, 100, 126), 20px -20px 0 -3px black;
 }
 
 .counts .count-box span {
@@ -628,16 +591,20 @@ section {
   padding-top: 15px;
   line-height: 40px;
   display: block;
-  font-weight: 900; 
-  color: #124265;
+  font-weight: 1000; 
+  background: linear-gradient(94.23deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-family: 'Space Grotesk', sans-serif;
+  text-shadow: white 4px 1px;
+  text-align: center;
 }
 
 .counts .count-box p {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
-  color: #1e6ca6;
+  color: #ffffff;
 }
 /*--------------------------------------------------------------
 # Services
@@ -647,9 +614,9 @@ section {
 */
 .services .icon-box1 {
   text-align: center;
-  background: rgba(0, 0, 0, 0.758);
   padding: 20px 20px;
   transition: all ease-in-out 0.3s;
+  box-shadow: 4px -4px 0 -3px rgb(255, 141, 160), 10px -10px black, -4px 4px 0 -3px rgb(255, 100, 126), 20px -20px 0 -3px black;
   border-radius: 20px;
 }
 
@@ -657,7 +624,8 @@ section {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #53ff7b;
+  background: linear-gradient(307deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  box-shadow: white -4px -2px;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -671,59 +639,42 @@ section {
   color: #fff;
   font-size: 28px;
 }
-
-.services .icon-box1 .icon1::before {
-  position: absolute;
-  content: ""; 
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-.services .icon-box1 .icon1::after {
-  position: absolute;
-  content: "";
-  left: 8px;
-  top: 8px;
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
 .services .icon-box1 h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
   font-size: 24px;
+  background: -webkit-linear-gradient(329deg, rgb(255, 123, 145) 20%, rgb(255, 74, 104) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .services .icon-box1 p {
+  font-family: 'Space Grotesk', sans-serif;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  color: rgb(182, 182, 182);
+  font-weight: 600;
 }
 /* 
 2
 */
 .services .icon-box2 {
   text-align: center;
-  background: rgb(253, 253, 253);
   padding: 20px 20px;
   transition: all ease-in-out 0.3s;
+  box-shadow: 4px -4px 0 -3px rgb(255, 141, 160), 10px -10px black, -4px 4px 0 -3px rgb(255, 100, 126), 20px -20px 0 -3px black;
   border-radius: 20px;
+  padding-bottom: 50px;
 }
 
 .services .icon-box2 .icon2 {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #6a74ff;
+  background: linear-gradient(307deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  box-shadow: white -4px -2px;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -737,59 +688,41 @@ section {
   color: #fff;
   font-size: 28px;
 }
-
-.services .icon-box2 .icon2::before {
-  position: absolute;
-  content: ""; 
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-.services .icon-box2 .icon2::after {
-  position: absolute;
-  content: "";
-  left: 8px;
-  top: 8px;
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
 .services .icon-box2 h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
   font-size: 24px;
+  background: -webkit-linear-gradient(329deg, rgb(255, 123, 145) 20%, rgb(255, 74, 104) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services .icon-box2 p {
+  font-family: 'Space Grotesk', sans-serif;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  color: rgb(182, 182, 182);
+  font-weight: 600;
 }
 /* 
 3
 */
 .services .icon-box3 {
   text-align: center;
-  background: rgb(253, 253, 253);
   padding: 20px 20px;
   transition: all ease-in-out 0.3s;
+  box-shadow: 4px -4px 0 -3px rgb(255, 141, 160), 10px -10px black, -4px 4px 0 -3px rgb(255, 100, 126), 20px -20px 0 -3px black;
   border-radius: 20px;
+  padding-bottom: 50px;
 }
 
 .services .icon-box3 .icon3 {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #ff4d4d;
+  background: linear-gradient(307deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  box-shadow: white -4px -2px;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -803,42 +736,22 @@ section {
   color: #fff;
   font-size: 28px;
 }
-
-.services .icon-box3 .icon3::before {
-  position: absolute;
-  content: ""; 
-  left: -8px;
-  top: -8px;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.15);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-.services .icon-box3 .icon3::after {
-  position: absolute;
-  content: "";
-  left: 8px;
-  top: 8px;
-  height: 100%;
-  width: 100%;
-  background: rgb(0, 0, 0);
-  border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
-}
-
 .services .icon-box3 h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
   font-size: 24px;
+  background: -webkit-linear-gradient(329deg, rgb(255, 123, 145) 20%, rgb(255, 74, 104) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .services .icon-box3 p {
+  font-family: 'Space Grotesk', sans-serif;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  color: rgb(182, 182, 182);
+  font-weight: 600;
 }
 .services h1{
   margin: 40px;
@@ -849,18 +762,16 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: 'Space Grotesk', sans-serif;
-  text-shadow: white 4px 1px;
+  text-shadow: rgb(205, 205, 205) 4px 1px;
   text-align: center;
+  padding-bottom: 50px;
   
-}
-.services h4{
-  color: wheat;
 }
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
 .faq .faq-list {
-  padding: 0 100px;
+  padding: 0 10px;
 }
 
 .faq .faq-list ul {
@@ -910,6 +821,7 @@ section {
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  text-align: justify;
 }
 
 .faq .faq-list .icon-show {
@@ -947,4 +859,5 @@ section {
   .faq .faq-list {
     padding: 0;
   }
+}
 }

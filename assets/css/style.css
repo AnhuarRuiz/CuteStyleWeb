@@ -123,12 +123,11 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 11px;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: rgba(0, 0, 0, 0.336);
 
 }
 #header.header-scrolled {
-  background-color: rgba(0, 0, 0, 0.744);
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  background-color: rgba(0, 0, 0, 0.862);
 }
 
 #header .logo {
@@ -212,7 +211,7 @@ h6 {
   margin-top: 11px;
   padding: 10px 0;
   z-index: 99;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: rgba(0, 0, 0, 0.336);
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
@@ -503,7 +502,7 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 30px 0;
   overflow: hidden;
   background-color: rgb(0, 0, 0);
 }
@@ -533,8 +532,34 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# About Video
 --------------------------------------------------------------*/
+
+.about .content {
+  font-size: 15px;
+}
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.about .content ul i {
+  font-size: 24px;
+  color: #2487ce;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
 .about h1{
   margin: 40px;
   font-size: 56px;
@@ -547,70 +572,22 @@ section {
   text-shadow: white 4px 1px;
   text-align: center;
 }
-.about h2{
-  color: #11dbcf;
-}
 .about .content h3 {
-  font-weight: 600;
-  font-size: 26px;
+  font-weight: 200;
+  font-size: 24px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: #e4e4e4;
 }
-
-.about .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about .content ul li {
-  padding-left: 28px;
-  position: relative;
-}
-
-.about .content ul li+li {
-  margin-top: 10px;
-}
-
-.about .content ul i {
-  position: absolute;
-  left: 0;
-  top: 2px;
-  font-size: 20px;
-  color: #2487ce;
-  line-height: 1;
-}
-
-.about .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 5px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #2487ce;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  margin-top: 6px;
-  border: 2px solid #2487ce;
-}
-
-.about .content .btn-learn-more:hover {
-  background: #2487ce;
-  color: #fff;
-  text-decoration: none;
+.about .content h3 span{
+  border-bottom: 2px solid #ff7ebe;
 }
 .about .member {
   margin-bottom: 20px;
-  overflow: hidden;
+  overflow: hidden; 
   text-align: center;
   border-radius: 180px;
   background: #fff;
-  box-shadow: 10px -10px 0 -3px rgb(253, 253, 109), 10px -10px black, -17px 10px 0 -3px rgb(255, 184, 196), 20px -20px 0 -3px black;
+  box-shadow: 10px -10px 0 -3px rgb(162, 155, 255), 10px -10px black, -17px 10px 0 -3px rgb(255, 155, 215), 20px -20px 0 -3px black;
 }
 
 .about .member .member-img {
@@ -670,158 +647,31 @@ section {
 .counts .count-box {
   width: 100%;
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  box-shadow: 5px -5px 0 -3px rgb(171, 109, 253), 10px -10px black, -5px 5px 0 -3px rgb(131, 187, 255), 20px -20px 0 -3px black;
 }
 
 .counts .count-box span {
   font-size: 48px;
-  line-height: 48px;
+  padding-top: 15px;
+  line-height: 40px;
   display: block;
   font-weight: 700;
   color: #124265;
   margin-left: 80px;
   margin: auto;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .counts .count-box p {
-  padding: 8px 0 0 0;
-  font-family: "Raleway", sans-serif;
+  padding: 1px 0 0 0;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   font-size: 14px;
   color: #1e6ca6;
 }
 
-/*--------------------------------------------------------------
-# About Video
---------------------------------------------------------------*/
-.about-video .content {
-  font-size: 15px;
-}
-
-.about-video .content h3 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #124265;
-}
-
-.about-video .content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.about-video .content ul li {
-  padding-bottom: 10px;
-  padding-left: 28px;
-  position: relative;
-}
-
-.about-video .content ul i {
-  font-size: 24px;
-  color: #2487ce;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-.about-video .content p:last-child {
-  margin-bottom: 0;
-}
-
-.about-video .play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(#2487ce 50%, rgba(36, 135, 206, 0.4) 52%);
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  left: calc(50% - 47px);
-  top: calc(50% - 47px);
-  overflow: hidden;
-}
-
-.about-video .play-btn::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.about-video .play-btn::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-btn 2s;
-  animation: pulsate-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid rgba(36, 135, 206, 0.7);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.about-video .play-btn:hover::after {
-  border-left: 15px solid #2487ce;
-  transform: scale(20);
-}
-
-.about-video .play-btn:hover::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
 
 /*--------------------------------------------------------------
 # Clients

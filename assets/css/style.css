@@ -133,6 +133,17 @@ section {
   overflow: hidden;
   background: url(../img/all/bg.jpg);
 }
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(133,26,232);
+  background: linear-gradient(94.23deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
+  border-radius: 5px;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -849,14 +860,24 @@ section {
   }
 }
 }
-::-webkit-scrollbar{
-  width: 5px;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  padding: 0 0 30px 0;
+  font-size: 14px;
+  background: url(../img/all/bg.jpg);
 }
-::-webkit-scrollbar-track{
-  background: rgb(255, 255, 255);
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 17px;
+  font-weight: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
 }
-::-webkit-scrollbar-thumb{
-  background-color: rgb(133,26,232);
-  background: linear-gradient(94.23deg,#fccf87 12.41%,#ff8469 52.55%,#ffb85b 89.95%);
-  border-radius: 5px;
+#footer .copyright span {
+  color: rgb(255, 239, 209);
+  border-bottom: 2px solid #ffb85b;
+  padding-bottom: 6px;
 }

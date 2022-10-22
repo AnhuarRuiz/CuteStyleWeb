@@ -35,7 +35,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: url(../img/all/cohete.png) top right no-repeat;
+  background: url(../img/cohete.png) top right no-repeat;
   width: 32px;
   height: 32px;
   border-radius: 4px; 
@@ -131,7 +131,7 @@ h6 {
 section {
   padding: 40px 0;
   overflow: hidden;
-  background: url(../img/all/bg.jpg);
+  background: url(../img//bg.jpg);
 }
 ::-webkit-scrollbar{
   width: 5px;
@@ -371,7 +371,7 @@ section {
   width: 100%;
   height: 100vh;
   position: relative;
-  background: url("../img/all/3.png") top center;
+  background: url("../img/3.png") top center;
   background-size: cover;
   position: relative;
 }
